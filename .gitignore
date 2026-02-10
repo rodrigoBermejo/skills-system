@@ -1,0 +1,63 @@
+# Dependencies
+node_modules/
+venv/
+env/
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+out/
+target/
+*.class
+*.jar
+*.war
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Private skills (opcional - descomenta si no quieres commitear skills privadas)
+# skills/private/
+
+# Config files with sensitive data
+.antigravity/secrets.json
+.claude/secrets.json
+config/secrets.json
