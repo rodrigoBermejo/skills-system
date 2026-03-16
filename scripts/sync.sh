@@ -131,7 +131,7 @@ while IFS= read -r skill_file; do
     dest="$GLOBAL_COMMANDS_DIR/$skill_name.md"
     cp "$skill_file" "$dest"
     echo -e "  ${GREEN}✓${NC} $skill_name.md"
-    ((sync_count++))
+    sync_count=$(( sync_count + 1 ))
 done < <(find "$SKILLS_DIR" -name "SKILL.md")
 
 echo ""
