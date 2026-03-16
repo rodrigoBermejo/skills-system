@@ -201,25 +201,26 @@ Antes de escribir código nuevo:
 
 **Secrets:**
 - Nunca hardcodear secrets, tokens, API keys, passwords o connection strings
-- Usar variables de entorno validadas via Zod en `apps/api/src/config/env.ts`
+- Usar variables de entorno con validación de schema (Zod, Joi, o equivalente según el stack del proyecto)
 - Verificar que `.gitignore` excluya archivos `.env*` antes de cualquier commit
+- Leer `CLAUDE.md` del proyecto para identificar dónde se configura el env (ej. `src/config/env.ts`, `config/settings.py`, etc.)
 
 **Validación:**
-- Todos los inputs externos se validan con Zod antes de usar
-- Usar schemas de `@vivehub/shared` cuando el input es compartido entre packages
+- Todos los inputs externos se validan antes de usar — con la librería estándar del proyecto
+- Si el proyecto usa packages compartidos, usar los schemas centralizados cuando el input es compartido entre módulos
 
 **Errores:**
-- Usar `AppError` de `apps/api/src/middleware/errorHandler.ts` para errores conocidos
-- Los mensajes de error al cliente no revelan detalles internos del sistema
+- Usar el mecanismo de error centralizado del proyecto (leer CLAUDE.md o docs/ para identificarlo)
+- Los mensajes de error al cliente no revelan detalles internos del sistema (stack traces, rutas, queries)
 
 **Dinero:**
 - Nunca usar `float` para valores monetarios
-- Siempre usar enteros en centavos. Ver `docs/skills/money.md`
+- Siempre usar enteros en la unidad mínima de la moneda (centavos, cents). Verificar si el proyecto tiene un helper documentado en `docs/`
 
-**Multi-tenancy:**
-- Todo query a la DB debe incluir `tenantId` en el WHERE
-- El middleware de tenant debe ejecutarse antes de cualquier route handler
-- Nunca confiar en el `tenantId` del body del request — solo del JWT
+**Multi-tenancy (si aplica):**
+- Todo query a la DB debe incluir el identificador de tenant
+- El middleware/guard de tenant debe ejecutarse antes de cualquier route handler
+- Nunca confiar en el tenant ID del body del request — solo del token autenticado (JWT, session)
 
 ### Estándar de commits (Conventional Commits)
 
@@ -240,24 +241,26 @@ chore: descripción
 
 Los checks se ejecutan **en orden**. Si alguno falla: **detener y reportar.**
 
+Leer `CLAUDE.md` o `package.json` / `Makefile` del proyecto para identificar los comandos exactos. Patrón general:
+
 ```bash
-# 1. Type check
-pnpm type-check
+# 1. Type check (TypeScript / .NET / Java según stack)
+# ej: pnpm type-check | dotnet build | mvn compile
 
 # 2. Lint
-pnpm lint
+# ej: pnpm lint | dotnet format --verify-no-changes | flake8
 
-# 3. Format
-pnpm format:check
+# 3. Format check
+# ej: pnpm format:check | prettier --check
 
 # 4. Tests
-pnpm test
+# ej: pnpm test | dotnet test | pytest
 
 # 5. Secrets check
 git diff develop..HEAD | grep -E "(password|secret|token|key)\s*=\s*['\"][^'\"]{8,}"
 
 # 6. Build
-pnpm build
+# ej: pnpm build | dotnet publish | npm run build
 ```
 
 ---
