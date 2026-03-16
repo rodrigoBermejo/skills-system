@@ -112,3 +112,27 @@ update_agents "$BACKEND_AGENTS" "$TMP_BACKEND" "BACKEND"
 
 echo ""
 echo -e "${GREEN}✨ Sincronización completada exitosamente.${NC}"
+
+# ─────────────────────────────────────────────
+# Sync global: copiar skills a ~/.claude/commands/
+# ─────────────────────────────────────────────
+GLOBAL_COMMANDS_DIR="$HOME/.claude/commands"
+
+if [ ! -d "$GLOBAL_COMMANDS_DIR" ]; then
+    mkdir -p "$GLOBAL_COMMANDS_DIR"
+fi
+
+echo ""
+echo -e "${BLUE}🌐 Sincronizando skills globales → $GLOBAL_COMMANDS_DIR${NC}"
+
+sync_count=0
+while IFS= read -r skill_file; do
+    skill_name=$(basename "$(dirname "$skill_file")")
+    dest="$GLOBAL_COMMANDS_DIR/$skill_name.md"
+    cp "$skill_file" "$dest"
+    echo -e "  ${GREEN}✓${NC} $skill_name.md"
+    ((sync_count++))
+done < <(find "$SKILLS_DIR" -name "SKILL.md")
+
+echo ""
+echo -e "${GREEN}✨ $sync_count skills sincronizadas globalmente en ~/.claude/commands/${NC}"
