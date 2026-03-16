@@ -34,11 +34,11 @@ frontend/
 ## 🔧 Skills Disponibles
 
 <!-- SKILLS_START -->
-- `frontend-testing` → cuando se necesite testing de frontend, se mencione Jest, React Testing Library, Cypress, Playwright, o testing strategies (Ver: /skills/public/frontend-testing/SKILL.md)
 - `angular` → cuando se trabaje con Angular, se creen componentes Angular, servicios, o se mencione desarrollo enterprise con Angular (Ver: /skills/public/angular/SKILL.md)
-- `state-management` → cuando se necesite manejar estado global, se mencione Redux, Zustand, NgRx, o state management en aplicaciones complejas (Ver: /skills/public/state-management/SKILL.md)
 - `frontend-design` → cuando se diseñen interfaces, se mencionen design systems, atomic design, Tailwind, Material UI, o patrones de UI/UX (Ver: /skills/public/frontend-design/SKILL.md)
+- `frontend-testing` → cuando se necesite testing de frontend, se mencione Jest, React Testing Library, Cypress, Playwright, o testing strategies (Ver: /skills/public/frontend-testing/SKILL.md)
 - `react` → cuando se trabaje con React, se creen componentes, se use hooks, o se mencione desarrollo de UI con React (Ver: /skills/public/react/SKILL.md)
+- `state-management` → cuando se necesite manejar estado global, se mencione Redux, Zustand, NgRx, o state management en aplicaciones complejas (Ver: /skills/public/state-management/SKILL.md)
 <!-- SKILLS_END -->
 
 ## 🧠 Reglas de Oro Frontend

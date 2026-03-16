@@ -35,18 +35,18 @@ backend/
 ## 🔧 Skills Disponibles
 
 <!-- SKILLS_START -->
-- `flask` → cuando se trabaje con Flask, web apps Python clásicas, o se mencione desarrollo web tradicional con Python (Ver: /skills/public/flask/SKILL.md)
 - `api-best-practices` → cuando se diseñen APIs REST, se mencione API design, RESTful principles, API documentation, o production-ready APIs (Ver: /skills/public/api-best-practices/SKILL.md)
-- `mongodb-patterns` → cuando se diseñen schemas de MongoDB, se implementen relaciones entre documentos, o se optimicen queries (Ver: /skills/public/mongodb-patterns/SKILL.md)
-- `sql-databases` → cuando se trabaje con bases de datos SQL, PostgreSQL, MySQL, SQL Server, diseño de schemas relacionales, o queries SQL (Ver: /skills/public/sql-databases/SKILL.md)
 - `data-processing` → cuando se trabaje con procesamiento de datos, análisis de datos, pandas, numpy, manipulación de datos, o data science con Python (Ver: /skills/public/data-processing/SKILL.md)
-- `express-mongodb` → cuando se trabaje con Express, MongoDB, MERN stack, APIs RESTful con Node.js, o autenticación JWT (Ver: /skills/public/express-mongodb/SKILL.md)
-- `java-spring` → cuando se trabaje con Java, Spring Boot, Spring Framework, APIs RESTful con Java, o desarrollo backend enterprise con Java (Ver: /skills/public/java-spring/SKILL.md)
-- `n8n` → cuando se trabaje con n8n, automatización de flujos, workflows, integración de servicios o nodos de IA en n8n (Ver: /skills/public/n8n/SKILL.md)
-- `fastapi` → cuando se trabaje con FastAPI, APIs modernas en Python, APIs asíncronas, o se mencione desarrollo de APIs rápidas con Python (Ver: /skills/public/fastapi/SKILL.md)
-- `python-basics` → cuando se trabaje con Python, se mencione desarrollo Python, scripting, o fundamentos de Python (Ver: /skills/public/python-basics/SKILL.md)
-- `nodejs-best-practices` → cuando se trabaje con Node.js, se configure un proyecto backend, o se necesiten mejores prácticas de Node (Ver: /skills/public/nodejs-best-practices/SKILL.md)
 - `dotnet-core` → cuando se trabaje con C#, .NET, .NET Core, ASP.NET Core, APIs RESTful con C#, o desarrollo backend enterprise con .NET (Ver: /skills/public/dotnet-core/SKILL.md)
+- `express-mongodb` → cuando se trabaje con Express, MongoDB, MERN stack, APIs RESTful con Node.js, o autenticación JWT (Ver: /skills/public/express-mongodb/SKILL.md)
+- `fastapi` → cuando se trabaje con FastAPI, APIs modernas en Python, APIs asíncronas, o se mencione desarrollo de APIs rápidas con Python (Ver: /skills/public/fastapi/SKILL.md)
+- `flask` → cuando se trabaje con Flask, web apps Python clásicas, o se mencione desarrollo web tradicional con Python (Ver: /skills/public/flask/SKILL.md)
+- `java-spring` → cuando se trabaje con Java, Spring Boot, Spring Framework, APIs RESTful con Java, o desarrollo backend enterprise con Java (Ver: /skills/public/java-spring/SKILL.md)
+- `mongodb-patterns` → cuando se diseñen schemas de MongoDB, se implementen relaciones entre documentos, o se optimicen queries (Ver: /skills/public/mongodb-patterns/SKILL.md)
+- `n8n` → cuando se trabaje con n8n, automatización de flujos, workflows, integración de servicios o nodos de IA en n8n (Ver: /skills/public/n8n/SKILL.md)
+- `nodejs-best-practices` → cuando se trabaje con Node.js, se configure un proyecto backend, o se necesiten mejores prácticas de Node (Ver: /skills/public/nodejs-best-practices/SKILL.md)
+- `python-basics` → cuando se trabaje con Python, se mencione desarrollo Python, scripting, o fundamentos de Python (Ver: /skills/public/python-basics/SKILL.md)
+- `sql-databases` → cuando se trabaje con bases de datos SQL, PostgreSQL, MySQL, SQL Server, diseño de schemas relacionales, o queries SQL (Ver: /skills/public/sql-databases/SKILL.md)
 <!-- SKILLS_END -->
 
 ## 🧠 Reglas de Oro Backend

@@ -59,11 +59,13 @@ Por favor, léela desde /skills/[public|private]/[nombre]/SKILL.md
 ### **Skills Principales del Sistema**
 
 <!-- SKILLS_START -->
-- `testing-strategies` → cuando se planee estrategia de testing, se configure CI/CD con tests, o se diseñe quality assurance (Ver: /skills/public/testing-strategies/SKILL.md)
-- `git-workflow` → cuando se trabaje con Git, control de versiones, commits, branches, o flujos de trabajo en equipo (Ver: /skills/public/git-workflow/SKILL.md)
+- `skill-creator` → Cuando el usuario pida crear una nueva skill, hacer una skill de X o mencione crear contexto especializado [Cuándo debe activarse esta skill] (Ver: /skills/examples/skill-creator/SKILL.md)
 - `cicd` → cuando se configure CI/CD, GitHub Actions, automatización de deployments, o pipelines (Ver: /skills/public/cicd/SKILL.md)
 - `deployment` → cuando se despliegue a producción, se configure hosting, Docker, Kubernetes, o cloud deployment (Ver: /skills/public/deployment/SKILL.md)
-- `skill-creator` → Cuando el usuario pida crear una nueva skill, hacer una skill de X o mencione crear contexto especializado [Cuándo debe activarse esta skill] (Ver: /skills/examples/skill-creator/SKILL.md)
+- `git-workflow` → cuando se trabaje con Git, control de versiones, commits, branches, o flujos de trabajo en equipo (Ver: /skills/public/git-workflow/SKILL.md)
+- `monorepo-structure` → cuando se cree un proyecto nuevo, se mencione estructura de carpetas, reorganización, monorepo, workspace, o cuando un proyecto no tenga CLAUDE.md (Ver: /skills/public/monorepo-structure/SKILL.md)
+- `ssdlc` → antes de cualquier tarea de desarrollo, cuando se mencione feature, bugfix, hotfix, refactor, security, PR, spec, o cuando se vaya a escribir código nuevo (Ver: /skills/public/ssdlc/SKILL.md)
+- `testing-strategies` → cuando se planee estrategia de testing, se configure CI/CD con tests, o se diseñe quality assurance (Ver: /skills/public/testing-strategies/SKILL.md)
 <!-- SKILLS_END -->
 
 ### **Auto-invocación de Skills**
